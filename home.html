@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        /* this is parent class */
+        .container {
+            /* margin: 10px; */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e175756c;
+            border: 2px solid #ff0000;
+            /* flex all three div but div item no */
+            display: flex;  
+                /*in one line in row format  */
+            flex-direction: row;
+            justify-content:space-between;
+
+        }
+         /* .container .start{
+            justify-content:start;
+        } */
+        /* logo class */
+        .start {
+            /* flex stat item in single line */
+            display: flex;
+            flex-direction: row;
+            /* margin-left: 20px; */
+        } 
+
+        /* home,about   */
+        .center{
+            /* flex main item in single line */
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            
+        }
+        .item-center{
+            padding: 7px 10px;
+            background-color: #f0f8ff;
+            border: 2px solid #ffffff;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .item-center:hover{
+            /* scale size  center*/
+            scale: 120.2%;  
+
+        }
+        .end{
+            /* flex login item in single line */
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            /* margin-right: 20px; */
+        }
+        .item-end{
+            padding: 7px 10px;
+            background-color: #f0f8ff;
+            border: 2px solid #ffffff;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .item-end:hover{
+            /* scale size  end*/
+            scale: 120.2%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="start">
+            <div class="item">item1</div>
+            <!-- <div class="item">item2</div> -->
+        </div>
+        <div class="center">
+            <div class="item item-center">item3</div>
+            <div class="item item-center">item4</div>
+            <div class="item item-center">item5</div>
+            <!-- <div class="item">item6</div>
+            <div class="item">item7</div> -->
+        </div>
+        <div class="end">
+            <div ><button type="button" class="item item-end">LOGIN</button></div>
+            <div ><button type="button" class="item item-end">LOGIN</button></div>
+        </div>
+    </div>
+</body>
+
+</html>
